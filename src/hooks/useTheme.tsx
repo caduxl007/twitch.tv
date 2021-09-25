@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState } from 'react';
-import { DefaultTheme } from 'styled-components';
+import { DefaultTheme, ThemeProvider as ThemeStyled } from 'styled-components';
 
 import { usePersistedState } from '../utils/usePersistedState';
 
@@ -22,7 +22,7 @@ const ThemeProvider: React.FC = ({ children }) => {
 
   return (
     <ThemeContext.Provider value={{ toggleTheme, theme }}>
-      {children}
+      <ThemeStyled theme={theme}>{children}</ThemeStyled>
     </ThemeContext.Provider>
   );
 };
