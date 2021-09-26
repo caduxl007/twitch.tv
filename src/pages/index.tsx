@@ -1,13 +1,16 @@
-import { useTheme } from '../hooks/useTheme';
+import Head from 'next/head';
+
+import { Header } from '../components/Header';
+import { Sidebar } from '../components/Sidebar';
 
 export default function Home() {
-  const { theme, toggleTheme } = useTheme();
-
-  console.log(theme);
-
   return (
-    <div>
-      <button onClick={toggleTheme}>Aki</button>
-    </div>
+    <>
+      <Head>
+        <title>Twitch</title>
+      </Head>
+      <Header />
+      <Sidebar />
+    </>
   );
 }

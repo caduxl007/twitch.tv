@@ -10,6 +10,8 @@ declare module 'styled-components' {
 
       background_primary: string;
       background_secundary: string;
+      background_tertiary: string;
+      background_icon: string;
       text: string;
     };
   }
