@@ -1,5 +1,7 @@
+import React from 'react';
 import { BiLogOut } from 'react-icons/bi';
 import { Icon } from '../Icon';
+import { Channel } from './Channel';
 
 import * as S from './styles';
 
@@ -13,6 +15,11 @@ export function Sidebar() {
             <BiLogOut size={20} />
           </Icon>
         </header>
+
+        <Channel />
+        <Channel />
+        <Channel isOffline />
+        <Channel isOffline />
       </div>
     </S.Container>
   );

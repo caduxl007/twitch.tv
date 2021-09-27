@@ -12,6 +12,7 @@ declare module 'styled-components' {
       background_secundary: string;
       background_tertiary: string;
       background_icon: string;
+      background_hover: string;
       text: string;
     };
   }

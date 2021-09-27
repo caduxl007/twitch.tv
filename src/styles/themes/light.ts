@@ -9,6 +9,7 @@ export default {
     background_secundary: '#efeff1',
     background_tertiary: '#ffffff',
     background_icon: '#d7d7d8',
+    background_hover: '#e6e6ea',
     text: '#333',
   },
 };
