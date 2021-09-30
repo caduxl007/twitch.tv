@@ -21,6 +21,17 @@ export function Sidebar() {
         <Channel isOffline />
         <Channel isOffline />
       </div>
+
+      <div>
+        <header>
+          <h2>CANAIS RECOMENDADOS</h2>
+        </header>
+
+        <Channel />
+        <Channel />
+        <Channel isOffline />
+        <Channel isOffline />
+      </div>
     </S.Container>
   );
 }

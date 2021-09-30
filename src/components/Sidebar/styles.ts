@@ -20,5 +20,9 @@ export const Container = styled.aside`
       justify-content:space-between;
       margin-bottom: 1rem;
     }
+
+    & + div {
+      margin-top: 2rem;
+    }
   }
 `;

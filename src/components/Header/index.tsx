@@ -9,6 +9,7 @@ import { Icon } from '../Icon';
 import { useTheme } from '../../hooks/useTheme';
 
 import * as S from './styles';
+import { Profile } from '../Profile';
 
 export function Header() {
   const { toggleTheme, theme } = useTheme();
@@ -64,6 +65,8 @@ export function Header() {
         <Icon>
           <Switch checked={theme.title === 'light'} onChange={toggleTheme} />
         </Icon>
+
+        <Profile />
       </S.ContentIcons>
     </S.Container>
   );

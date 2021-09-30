@@ -93,4 +93,5 @@ export const Input = styled.div`
 
 export const ContentIcons = styled.div`
   gap: 1rem;
+  align-items: center;
 `;
