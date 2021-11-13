@@ -36,3 +36,16 @@ export const Container = styled.div`
     }
   }
 `;
+
+export const NavProfile = styled.main`
+  position: absolute;
+  right: 15px;
+  top: 48px;
+width: 28rem;
+  height: 54rem;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px -1px 10px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px -1px 10px -1px rgba(0,0,0,0.75);
+box-shadow: 3px -1px 10px -1px rgba(0,0,0,0.75);
+  background-color: ${props => props.theme.colors.background_tertiary};
+`;

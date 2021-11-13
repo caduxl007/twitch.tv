@@ -17,7 +17,7 @@ export function Header() {
   return (
     <S.Container>
       <div>
-        <div>Logo</div>
+        <div></div>
 
         <S.Nav>
           <ul>
@@ -27,14 +27,6 @@ export function Header() {
 
             <li>
               <a href="">Procurar</a>
-            </li>
-
-            <li>
-              <a href="">Esports</a>
-            </li>
-
-            <li>
-              <a href="">Música</a>
             </li>
 
             <Icon>

@@ -12,6 +12,14 @@ export const Container = styled.header`
 
   > div {
     display: flex;
+
+    > div {
+      figure {
+        svg {
+          fill: blue;
+        }
+      }
+    }
   }
 `;
 
@@ -32,19 +40,6 @@ export const Nav = styled.nav`
 
         &:hover {
           color: ${(props) => props.theme.colors.secundary};
-        }
-      }
-
-      &:nth-child(2) {
-        &::after {
-          content: '';
-          display: inline-block;
-          margin-left: 2rem;
-          width: 1px;
-          padding: 1rem 0;
-
-          background-color: ${(props) =>
-            props.theme.colors.background_secundary};
         }
       }
     }

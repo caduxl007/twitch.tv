@@ -1,13 +1,20 @@
-import { FaUser } from 'react-icons/fa';
+import { FiUser } from 'react-icons/fi';
 
 import * as S from './styles';
 
 export function Profile() {
   return (
+    <>
     <S.Container>
-      <FaUser color="#fff5fd" />
+      <FiUser color="#fff5fd" size={20} />
 
       <div />
+
+      
     </S.Container>
+    <S.NavProfile>
+        
+      </S.NavProfile>
+    </>
   );
 }
