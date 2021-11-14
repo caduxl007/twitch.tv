@@ -2,18 +2,13 @@ import { FaSearch, FaEllipsisV } from 'react-icons/fa';
 import { AiOutlineInbox } from 'react-icons/ai';
 import { CgCrown } from 'react-icons/cg';
 import { BsChatSquare } from 'react-icons/bs';
-import Switch from 'react-switch';
 
 import { Icon } from '../Icon';
-
-import { useTheme } from '../../hooks/useTheme';
 
 import * as S from './styles';
 import { Profile } from '../Profile';
 
 export function Header() {
-  const { toggleTheme, theme } = useTheme();
-
   return (
     <S.Container>
       <div>
@@ -52,10 +47,6 @@ export function Header() {
         </Icon>
         <Icon>
           <BsChatSquare />
-        </Icon>
-
-        <Icon>
-          <Switch checked={theme.title === 'light'} onChange={toggleTheme} />
         </Icon>
 
         <Profile />

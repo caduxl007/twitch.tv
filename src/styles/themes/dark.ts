@@ -5,6 +5,8 @@ export default {
     primary: '#333',
     secundary: '#a970ff',
 
+    background_line: '#ffffff1a',
+
     background_primary: '#0e0e10',
     background_secundary: '#1f1f23',
     background_tertiary: '#18181b',

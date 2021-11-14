@@ -8,9 +8,9 @@ export function usePersistedState<T>(
   initialState: T,
 ): Response<T> {
   const [state, setState] = useState(() => {
-    // const storageValue = localStorage.getItem(key);
-
     const { key: storageValue } = parseCookies();
+
+    console.log(initialState);
 
     if (storageValue) {
       return JSON.parse(storageValue);

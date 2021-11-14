@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Container = styled.div`
   position: relative;
@@ -12,12 +12,14 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
+  cursor: pointer;
+
   > div {
     position: absolute;
     bottom: 0;
     right: 0;
 
-    background-color: ${props => props.theme.colors.background_tertiary};
+    background-color: ${(props) => props.theme.colors.background_tertiary};
     height: 1rem;
     width: 1rem;
     border-radius: 50%;
@@ -39,13 +41,19 @@ export const Container = styled.div`
 
 export const NavProfile = styled.main`
   position: absolute;
+  padding: 1rem;
   right: 15px;
   top: 48px;
-width: 28rem;
+  width: 28rem;
   height: 54rem;
   border-radius: 8px;
-  -webkit-box-shadow: 3px -1px 10px -1px rgba(0,0,0,0.75);
--moz-box-shadow: 3px -1px 10px -1px rgba(0,0,0,0.75);
-box-shadow: 3px -1px 10px -1px rgba(0,0,0,0.75);
-  background-color: ${props => props.theme.colors.background_tertiary};
+  -webkit-box-shadow: 3px -1px 10px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px -1px 10px -1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px -1px 10px -1px rgba(0, 0, 0, 0.75);
+  background-color: ${(props) => props.theme.colors.background_tertiary};
+
+  > div {
+    padding: 1rem 0;
+    border-top: 1px solid ${(props) => props.theme.colors.background_line};
+  }
 `;
